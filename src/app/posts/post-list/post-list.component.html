@@ -13,6 +13,7 @@
         <md-list>
             <md-list-item>
                 <a md-line [routerLink]="['/posts/post-detail', post.id]"> {{post.title}} </a>
+                <a md-line > {{post.sub_title}} </a>
                 <p md-line>
                     <span>{{post.content}}</span>
                 </p>

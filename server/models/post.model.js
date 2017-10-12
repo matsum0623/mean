@@ -11,6 +11,10 @@ const PostSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  sub_title: {
+    type: String,
+    required: true
+  },
   content: {
     type: String
   },

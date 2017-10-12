@@ -15,7 +15,7 @@ import config from './config';
 import APIError from '../helpers/APIError';
 import path from 'path';
 import appRoot from 'app-root-path';
-import innograph from 'innograph'
+import matsumgraph from 'matsumgraph'
 import postCtrl from '../controllers/post.controller';
 
 
@@ -54,7 +54,9 @@ app.use(express.static(path.join(appRoot.path, 'dist')));
 
 app.use('/api', routes);
 
-innograph.init('/api/graphql', app, {post: postCtrl});
+import schema from '../schema';
+
+matsumgraph.init('/api/graphql', app, {post: postCtrl}, schema);
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(appRoot.path, 'dist/index.html'));

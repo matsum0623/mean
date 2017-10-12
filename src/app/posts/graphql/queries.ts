@@ -5,6 +5,7 @@ export const GetPostDetailQuery= gql`
         post(id: $id) {
             id
             title
+            sub_title
             content
         }
     }
@@ -15,6 +16,7 @@ export const GetPostsQuery = gql`
     posts {
         id
         title
+        sub_title
         content
     }
   }

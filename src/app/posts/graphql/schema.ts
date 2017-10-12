@@ -16,6 +16,7 @@ export interface DeletePostInterface {
 export interface PostsInterface {
   posts: Array<{
     title: string | null,
+    sub_title: string | null,
     content: string | null
   }> | null;
 }
@@ -24,6 +25,7 @@ export interface PostByIdInterface {
     post:{
       id: string,
       title: string | null,
+      sub_title: string | null,
       content: string | null
   }
 }

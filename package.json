@@ -1,6 +1,6 @@
 {
   "name": "Mean",
-  "version": "2.0.1",
+  "version": "0.0.1",
   "description": "A MEAN stack framework using Angular Webpack Starter kit - featuring Angular (Router, Http, Forms, Services, Tests, E2E, Coverage), Karma, Protractor, Jasmine, Istanbul, TypeScript, and Webpack",
   "keywords": [
     "angular",
@@ -9,8 +9,8 @@
     "webpack",
     "typescript"
   ],
-  "author": "Lior Kesos <lior@linnovate.net>",
-  "homepage": "http://mean.io",
+  "author": "Matsum0623 <matsum0623@gmail.com>",
+  "homepage": "https://github.com/matsum0623/",
   "license": "MIT",
   "scripts": {
     "build:aot:prod": "npm run clean:dist && npm run clean:aot && cross-env BUILD_AOT=1 npm run webpack -- --config config/webpack.prod.js  --progress --profile --bail",
@@ -88,7 +88,7 @@
     "@angularclass/hmr-loader": "~3.0.2",
     "angular2-universal": "2.0.11",
     "apollo-angular": "^0.13.0",
-    "apollo-client": "^1.4.2",
+    "apollo-client": "^1.0.1",
     "app-root-path": "^2.0.1",
     "babel-cli": "^6.24.1",
     "body-parser": "^1.17.2",
@@ -104,16 +104,16 @@
     "express-winston": "^2.4.0",
     "graphql": "^0.10.1",
     "graphql-server-express": "latest",
-    "graphql-tag": "^2.2.2",
+    "graphql-tag": "^1.3.1",
     "graphql-tools": "^1.0.0",
     "hammerjs": "^2.0.8",
     "helmet": "^3.6.1",
     "http-server": "^0.9.0",
     "http-status": "^1.0.1",
     "ie-shim": "^0.1.0",
-    "innograph": "git://github.com/linnovate/innograph.git#devel",
     "joi": "^10.5.2",
     "material": "^0.1.1",
+    "matsumgraph": "^1.0.2",
     "method-override": "^2.3.9",
     "mongoose": "^4.10.6",
     "morgan": "^1.8.2",
@@ -204,10 +204,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AngularClass/angular-starter.git"
+    "url": "https://github.com/matsum0623/mean.git"
   },
   "bugs": {
-    "url": "https://github.com/AngularClass/angular-starter/issues"
+    "url": "https://github.com/matsum0623/meanissues"
   },
   "engines": {
     "node": ">= 4.2.1",
