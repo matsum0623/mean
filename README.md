@@ -1,4 +1,8 @@
-[![Gitter](https://badges.gitter.im/JoinChat.svg)](https://gitter.im/linnovate/mean?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+`mean`.ioを元に改良を加えた。今のところは以下の通り
+
+* innographを使用するとmongoDBのスキーマ設定がモジュール内での設定となるため、[matsumgraph](https://github.com/matsum0623/innograph)を自作して変更
+
+以下、本家のREADME
 
 # [![MEAN Logo](http://mean.io/wp-content/themes/twentysixteen-child/images/meanlogo.png)](http://mean.io/) MEAN<sup>2</sup>
 
