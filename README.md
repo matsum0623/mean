@@ -2,6 +2,13 @@
 
 * innographを使用するとmongoDBのスキーマ設定がモジュール内での設定となるため、[matsumgraph](https://github.com/matsum0623/innograph)を自作して変更
 
+
+## ToDo
+
+* 現状ビルドが通らないことを解消（typescriptのバージョンアップにモジュールが追い付いていないようだ）
+* 
+
+
 以下、本家のREADME
 
 # [![MEAN Logo](http://mean.io/wp-content/themes/twentysixteen-child/images/meanlogo.png)](http://mean.io/) MEAN<sup>2</sup>
