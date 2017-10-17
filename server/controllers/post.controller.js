@@ -12,6 +12,7 @@ function get(req, res) {
 function create(params) {
   const post = new Post({
     title: params.data.title,
+    sub_title: params.data.sub_title,
     content: params.data.content
   });
   return post.save();

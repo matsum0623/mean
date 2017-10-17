@@ -30,6 +30,7 @@ export class EditPostComponent implements OnInit {
       title: ['', [
         Validators.required,
       ]],
+      sub_title: [''],
       content: ['']
     });
     this.apollo = apollo;
@@ -45,7 +46,7 @@ export class EditPostComponent implements OnInit {
       variables: { id : this.id }
     }).subscribe(({ data }) => {
       that.post = data.post;
-      this.form.setValue({title: data.post.title, content: data.post.content});
+      this.form.setValue({title: data.post.title, sub_title: data.post.sub_title, content: data.post.content});
     });
   }
 
@@ -59,19 +60,20 @@ export class EditPostComponent implements OnInit {
         id : this.post.id,
         data : {
           title : this.form.value.title,
+          sub_title : this.form.value.sub_title,
           content : this.form.value.content
         }
       },
     })
-      .take(1)
-      .subscribe({
-        next: ({ data }) => {
-          console.log('edit post', data);
-          // get edit data
-          this.router.navigate(['/posts']);
-        }, error: (errors) => {
-          console.log('there was an error sending the query', errors);
-        }
-      });
+    .take(1)
+    .subscribe({
+      next: ({ data }) => {
+        console.log('edit post', data);
+        // get edit data
+        this.router.navigate(['/posts']);
+      }, error: (errors) => {
+        console.log('there was an error sending the query', errors);
+      }
+    });
   }
 }

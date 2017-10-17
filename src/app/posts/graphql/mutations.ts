@@ -14,6 +14,7 @@ export const UpdatePostMutation = gql`
         updatePost(id: $id, data: $data) { 
             id  
             title 
+            sub_title
             content
         }
     }

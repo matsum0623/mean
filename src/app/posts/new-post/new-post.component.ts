@@ -23,6 +23,7 @@ export class NewPostComponent {
       title: ['', [
         Validators.required,
       ]],
+      sub_title: [''],
       content: ['']
     });
     this.apollo = apollo;
@@ -36,6 +37,7 @@ export class NewPostComponent {
       variables: {
         data: {
           title: this.form.value.title,
+          sub_title: this.form.value.sub_title,
           content: this.form.value.content
         }
       },
