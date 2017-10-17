@@ -1,6 +1,7 @@
 [mean.io](http://mean.io)を元に改良を加えた。今のところは以下の通り
 
 * innographを使用するとmongoDBのスキーマ設定がモジュール内での設定となるため、[matsumgraph](https://github.com/matsum0623/innograph)を自作して変更
+* @angular/materialの使い方を変更 `md` => `mat`
 
 
 ## ToDo
