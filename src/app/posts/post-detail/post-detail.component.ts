@@ -22,7 +22,7 @@ import { GetPostDetailQuery } from '../graphql/queries';
 })
 
 export class PostDetailComponent implements OnInit, OnDestroy {
-    public pageTitle: string = 'Post detail:';
+    public pageTitle: string = '投稿詳細:';
     public post: any;
     public errorMessage: string;
     public postControl = new FormControl();

@@ -1,6 +1,6 @@
 <div class="postDetail">
     <div *ngIf="post">
-        <h5>Edit post:</h5>
+        <h5>投稿修正:</h5>
         <form [formGroup]="form" (ngSubmit)="save()">
             <mat-input-container>
                 <input matInput formControlName="title"  placeholder="Title">
